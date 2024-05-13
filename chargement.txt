@@ -1,0 +1,1 @@
+Le diagramme de séquence décrit l'exécution de la 
