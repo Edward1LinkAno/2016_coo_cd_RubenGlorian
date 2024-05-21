@@ -1,1 +1,5 @@
-Le diagramme de séquence décrit l'exécution de la 
+Le diagramme de séquence décrit l'exécution de la méthode ChargeurMagasin().
+La méthode est appelée depuis le Main dans ChargeurMagasin où elle crée une instence de Magasin.
+Ensuite, Chargeur crée une instence de ChargeurCD avant d'appeler ChargerCD().
+La méthode ChargerCD() crée une instence CD et y ajoute les pistes associées.
+Pour finir, ChargerMagasin() ajoute le CD à l'instence de Magasin avec ajouterCD().
