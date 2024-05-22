@@ -1,0 +1,18 @@
+Question 3 :
+Théoriquement, il n'y aurait que deux méthodes à faire,
+la méthode de comparaison et la méthode de tri.
+Il se peut cependant qu'il faille suprimer une ancienne méthode de tri
+si la nouvelle sert à la remplacer.
+Ou, aussi, qu'il n'y ait pas de méthode de comparaison à construire
+si elle existe déjà.
+
+Question 4 :
+Mes deux méthodes de tri sont pareilles avec,
+pour seule différence, la méthode de comparaison qui change.
+Parce qu'elles fonctionnent pareillement.
+Je devrait le corriger sur les deux méthodes.
+
+Question 5 :
+La seule différence est la méthode de comparaison des méthodes de tri.
+
+Question 6 :

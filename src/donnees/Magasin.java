@@ -67,7 +67,7 @@ public class Magasin {
 			res=this.listeCds.get(i);
 		return(res);
 	}
-	
+
 	public void trierAlbum(){
 		ArrayList<CD> interListeCD = new ArrayList<CD>() ;
 		CD cdMin ;
