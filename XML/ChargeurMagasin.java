@@ -69,7 +69,7 @@ public class ChargeurMagasin {
 	 */
 	private CD lireCd(File fichier) {
 		try {
-			ChargeurCD chargement = new ChargeurCD(fichier.getCanonicalPath());
+			XML.ChargeurCD chargement = new XML.ChargeurCD(fichier.getCanonicalPath());
 			CD cd = chargement.chargerCD();
 			return cd;
 		} catch (IOException e) {
