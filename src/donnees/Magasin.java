@@ -67,8 +67,7 @@ public class Magasin {
 			res=this.listeCds.get(i);
 		return(res);
 	}
-
-	// TODO  ajouter une methode de tri
+	
 	public void trierAlbum(){
 		ArrayList<CD> interListeCD = new ArrayList<CD>() ;
 		CD cdMin ;
@@ -96,4 +95,6 @@ public class Magasin {
 		}
 		this.listeCds = interListeCD ;
 	}
+
+	// v2.0
 }
