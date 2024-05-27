@@ -68,33 +68,47 @@ public class Magasin {
 		return(res);
 	}
 
-	public void trierAlbum(){
-		ArrayList<CD> interListeCD = new ArrayList<CD>() ;
-		CD cdMin ;
-		while (!this.listeCds.isEmpty()){
-			cdMin = this.listeCds.get(0) ;
-			for (int i=1; i<this.listeCds.size(); i++) {
-				if (cdMin.compareCD(this.listeCds.get(i)) > 0){cdMin = this.listeCds.get(i);}
-			}
-			interListeCD.add(cdMin) ;
-			listeCds.remove(cdMin) ;
-		}
-		this.listeCds = interListeCD ;
-	}
+	//public void trierAlbum(){
+	//	ArrayList<CD> interListeCD = new ArrayList<CD>() ;
+	//	CD cdMin ;
+	//	while (!this.listeCds.isEmpty()){
+	//		cdMin = this.listeCds.get(0) ;
+	//		for (int i=1; i<this.listeCds.size(); i++) {
+	//			if (cdMin.compareCD(this.listeCds.get(i)) > 0){cdMin = this.listeCds.get(i);}
+	//		}
+	//		interListeCD.add(cdMin) ;
+	//		listeCds.remove(cdMin) ;
+	//	}
+	//	this.listeCds = interListeCD ;
+	//}
 
-	public void trierArtiste(){
-		ArrayList<CD> interListeCD = new ArrayList<CD>() ;
-		CD cdMin ;
-		while (!this.listeCds.isEmpty()){
-			cdMin = this.listeCds.get(0) ;
-			for (int i=1; i<this.listeCds.size(); i++) {
-				if (cdMin.compareArtiste(this.listeCds.get(i)) > 0){cdMin = this.listeCds.get(i);}
-			}
-			interListeCD.add(cdMin) ;
-			listeCds.remove(cdMin) ;
-		}
-		this.listeCds = interListeCD ;
-	}
+	//public void trierArtiste(){
+	//	ArrayList<CD> interListeCD = new ArrayList<CD>() ;
+	//	CD cdMin ;
+	//	while (!this.listeCds.isEmpty()){
+	//		cdMin = this.listeCds.get(0) ;
+	//		for (int i=1; i<this.listeCds.size(); i++) {
+	//			if (cdMin.compareArtiste(this.listeCds.get(i)) > 0){cdMin = this.listeCds.get(i);}
+	//		}
+	//		interListeCD.add(cdMin) ;
+	//		listeCds.remove(cdMin) ;
+	//	}
+	//	this.listeCds = interListeCD ;
+	//}
 
 	// v2.0
+
+	public void trier(ComparateurCd cCd){
+		ArrayList<CD> interListeCD = new ArrayList<CD>() ;
+		CD cdMin ;
+		while (!this.listeCds.isEmpty()){
+			cdMin = this.listeCds.get(0) ;
+			for (int i=1; i<this.listeCds.size(); i++) {
+				if (cCd.etreAvant(this.listeCds.get(i),cdMin)){cdMin = this.listeCds.get(i);}
+			}
+			interListeCD.add(cdMin) ;
+			listeCds.remove(cdMin) ;
+		}
+		this.listeCds = interListeCD ;
+	}
 }
